@@ -2,6 +2,7 @@ public class StringCase {
     public static void main(String[] args) {
         System.out.println(solve("testT"));
     }
+
     public static String solve(final String str) {
         int lowerCaseCount = 0;
         int upperCaseCount = 0;
@@ -9,7 +10,7 @@ public class StringCase {
         for (int i = 0; i < character.length; i++) {
             if (Character.isLowerCase(str.charAt(i))) {
                 lowerCaseCount++;
-           } else if (Character.isUpperCase(str.charAt(i))) {
+            } else if (Character.isUpperCase(str.charAt(i))) {
                 upperCaseCount++;
             }
         }

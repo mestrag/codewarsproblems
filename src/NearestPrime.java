@@ -12,8 +12,8 @@ public class NearestPrime {
 
     public static long solve(long n) {
 
-        int diff1,diff2=0;
-        int num1,num2=0;
+        int diff1, diff2 = 0;
+        int num1, num2 = 0;
 /*
         for(Long i =n;;i++){
             if(isPrime((int) n)){
@@ -23,10 +23,10 @@ public class NearestPrime {
             }
         }*/
 
-        for(Long j=n;;j--){
-            if(isPrime((int) n)){
-                diff2= (int) (n-j);
-                num2= Math.toIntExact(j);
+        for (Long j = n; ; j--) {
+            if (isPrime((int) n)) {
+                diff2 = (int) (n - j);
+                num2 = Math.toIntExact(j);
                 break;
             }
         }
@@ -36,7 +36,7 @@ public class NearestPrime {
         else if (diff2<diff1) {
          return num2;
         }*/
-return num2;
+        return num2;
 
 
        /* for (int j = store.size()-1; j >0; j--) {
@@ -58,7 +58,7 @@ return num2;
     }
 
     public static boolean isPrime(int n) {
-       BigInteger b = BigInteger.valueOf(n);
+        BigInteger b = BigInteger.valueOf(n);
 
         return b.isProbablePrime(1);
     }

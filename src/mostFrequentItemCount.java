@@ -10,25 +10,22 @@ public class mostFrequentItemCount {
 
     public static int mostFrequentItemCount(int[] collection) {
 
-        if(collection.length==0){
+        if (collection.length == 0) {
             return 0;
         }
 
         Map<Integer, Integer> countMap = new HashMap<>();
-        for (int i = 0; i < collection.length; i++)
-        {
+        for (int i = 0; i < collection.length; i++) {
             int key = collection[i];
-            if (countMap.containsKey(key))
-            {
+            if (countMap.containsKey(key)) {
                 int count = countMap.get(key);
                 count++;
                 countMap.put(key, count);
-            } else
-            {
+            } else {
                 countMap.put(key, 1);
             }
         }
-        Map.Entry<Integer, Integer> maxEntry =null;
+        Map.Entry<Integer, Integer> maxEntry = null;
 
         for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
 

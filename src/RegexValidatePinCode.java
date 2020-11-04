@@ -6,6 +6,7 @@ public class RegexValidatePinCode {
         System.out.println("123\n");
         System.out.println("9¾9¾".length());
     }
+
     public static Boolean validatePin(String pin) {
 
         if (pin.length() <= 0 || pin.length() <= 3 || pin.length() == 5 || pin.length() > 6) {
@@ -15,7 +16,7 @@ public class RegexValidatePinCode {
             return false;
         }
 
-        if (pin.length() == 6 || pin.length() == 4 ) {
+        if (pin.length() == 6 || pin.length() == 4) {
             if (Pattern.compile("[0-9]*\\.?[0-9]*[.a-z.A-Z]").matcher(pin).find()) {
                 return false;
             }

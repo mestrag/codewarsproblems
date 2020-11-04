@@ -6,14 +6,11 @@ that returns a string of those numbers in the form of a phone number.
 public class CreatePhoneNumber {
     public static String createPhoneNumber(int[] numbers) {
 
-        StringBuffer sb= new StringBuffer();
-        for(int i=0;i< numbers.length;i++){
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < numbers.length; i++) {
             sb.append(numbers[i]);
         }
-
-
-
         // Your code here!
-        return "("+sb.substring(0,3)+")"+" "+ sb.substring(3,6)+"-"+sb.substring(6,sb.length());
+        return "(" + sb.substring(0, 3) + ")" + " " + sb.substring(3, 6) + "-" + sb.substring(6, sb.length());
     }
 }

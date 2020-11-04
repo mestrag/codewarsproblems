@@ -7,7 +7,7 @@ public class Encryptthis {
     public static void main(String[] args) {
 
         System.out.println(encryptThis("Barry is"));
-String x = "103";
+        String x = "103";
         System.out.println(Character.toString(Integer.parseInt(x)));
 
     }

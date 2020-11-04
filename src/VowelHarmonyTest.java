@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 public class VowelHarmonyTest {
     @Test
-    public void exampleTests () {
+    public void exampleTests() {
         assertEquals("ablaknak", VowelHarmony.dative("ablak"));
         assertEquals("tükörnek", VowelHarmony.dative("tükör"));
         assertEquals("keretnek", VowelHarmony.dative("keret"));

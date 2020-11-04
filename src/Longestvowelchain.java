@@ -6,10 +6,10 @@ public class Longestvowelchain {
     public static void main(String[] args) {
         String s = "ultrarevolutionariees";
         String[] vowelsTable = s.split("[^a,e,i,o,u]");
-        HashMap<Integer,String> hashMap= new HashMap<>();
-        for(int i=0;i<vowelsTable.length;i++){
+        HashMap<Integer, String> hashMap = new HashMap<>();
+        for (int i = 0; i < vowelsTable.length; i++) {
             String c = vowelsTable[i];
-            hashMap.put(i,c);
+            hashMap.put(i, c);
         }
 
 
@@ -18,11 +18,12 @@ public class Longestvowelchain {
 
         for (int j = 0; j < vowelsTable.length; j++) {
             System.out.println(vowelsTable[j]);
-        }    }
+        }
+    }
 
 
     public static int longvowel(String s) {
-      ///  System.out.println(Arrays.stream((s.split("[^aeiou]"))).mapToInt(String::length).max().orElse(0));
+        ///  System.out.println(Arrays.stream((s.split("[^aeiou]"))).mapToInt(String::length).max().orElse(0));
         String[] vowelsTable = s.split("[^a,e,i,o,u]");
         for (int j = 0; j < vowelsTable.length; j++) {
             System.out.println(vowelsTable[j]);

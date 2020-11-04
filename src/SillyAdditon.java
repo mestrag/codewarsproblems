@@ -28,7 +28,7 @@ public class SillyAdditon {
             System.out.println("test");
         } else if (ch1.size() > ch.size()) {
             for (int k = ch1.size() - 1; k <= 0; k--) {
-                for (int l = 0; l <ch.size(); l--) {
+                for (int l = 0; l < ch.size(); l--) {
                     System.out.println(ch1.get(k));
                     sum[k] = ch1.get(k) + ch.get(l);
                     System.out.println(sum);

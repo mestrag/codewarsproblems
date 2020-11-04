@@ -5,13 +5,12 @@ public class Digitalroot {
         if (countDigit(n) == 1) {
             return n;
         }
-
         int sum = 0;
         while (countDigit(n) > 1) {
             for (sum = 0; n != 0; n = n / 10) {
                 sum += n % 10;
             }
-            n=sum;
+            n = sum;
         }
         return sum;
     }

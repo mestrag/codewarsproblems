@@ -1,13 +1,13 @@
 public class CountTheDigit {
     public static void main(String[] args) {
         nbDig(11011, 2);
-      //  sqaureOfNum(5);
+        //  sqaureOfNum(5);
     }
 
     static int nbDig(int n, int d) {
-     StringBuilder bf = new StringBuilder();
-        for (int i = 0; i<=n; i++) {
-           bf.append(i*i);
+        StringBuilder bf = new StringBuilder();
+        for (int i = 0; i <= n; i++) {
+            bf.append(i * i);
         }
         int count = 0;
         String x = Integer.toString(d);
@@ -16,7 +16,7 @@ public class CountTheDigit {
                 count++;
             }
         }
-         return count;
+        return count;
     }
 
     /*static int[] sqaureOfNum(int x){

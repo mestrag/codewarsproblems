@@ -16,7 +16,7 @@ public class Recursion101 {
     public static int[] solve(int a, int b) {
         int[] x = new int[2];
         if (a == 0 || b == 0) {
-            int []y;
+            int[] y;
 
         } else if (a >= 2 * b) {
             a = a - 2 * b;

@@ -5,8 +5,9 @@ public class SimpleFrequencySort {
     public static void main(String[] args) {
 
     }
+
     public static int[] sortByFrequency(int[] s) {
-       // System.out.println(Arrays.toString(s));
+        // System.out.println(Arrays.toString(s));
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < s.length; i++) {
             int x = s[i];
@@ -19,8 +20,7 @@ public class SimpleFrequencySort {
         }
 
 
-
-        Map<Integer,Integer> mp = new TreeMap<>(map);
+        Map<Integer, Integer> mp = new TreeMap<>(map);
         System.out.println(mp);
 
         ArrayList<Map.Entry<Integer, Integer>> mapEntry = new ArrayList<>(map.entrySet());
@@ -30,8 +30,6 @@ public class SimpleFrequencySort {
                 return o2.getValue().compareTo(o1.getValue());
             }
         });
-
-
 
 
         ArrayList<Integer> k = new ArrayList<>();

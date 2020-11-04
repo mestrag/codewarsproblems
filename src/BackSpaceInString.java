@@ -5,6 +5,7 @@ public class BackSpaceInString {
     public static void main(String[] args) {
         System.out.println(cleanString("abc#d##c"));
     }
+
     public static String cleanString(String s) {
 
 

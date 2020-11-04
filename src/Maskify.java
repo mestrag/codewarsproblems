@@ -5,7 +5,7 @@ public class Maskify {
 
     public static String maskify(String str) {
         int l = str.length();
-        if (l == 1 || l<=4) {
+        if (l == 1 || l <= 4) {
             return str;
         } else if (l == 0) {
             return "";

@@ -16,8 +16,8 @@ public class NearestPrimeTest {
         assertEquals(34981L, NearestPrime.solve(35000L));
     }
 
-        @Test
-        public void longTest() {
+    @Test
+    public void longTest() {
         assertEquals(10000000019L, NearestPrime.solve(10000000000L));
     }
 }

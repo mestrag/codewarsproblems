@@ -3,16 +3,16 @@ public class VowelHarmony {
         System.out.println(dative("tükör"));
         System.out.println(dative("albak"));
 
-        String word= "tükör";
+        String word = "tükör";
         char[] front = {'e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'};
         char[] back = {'a', 'á', 'o', 'ó', 'u', 'ú'};
 
-        for(char c:front){
-           // System.out.println(word.indexOf(c));
-            if(c==word.indexOf(c)){
-                System.out.println(word+"nek");
+        for (char c : front) {
+            // System.out.println(word.indexOf(c));
+            if (c == word.indexOf(c)) {
+                System.out.println(word + "nek");
             }
-break;
+            break;
         }
     }
 
@@ -21,9 +21,9 @@ break;
         char[] front = {'e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'};
         char[] back = {'a', 'á', 'o', 'ó', 'u', 'ú'};
 
-        for(char c:front){
-            if(c==word.indexOf(word)){
-                System.out.println(word+"nek");
+        for (char c : front) {
+            if (c == word.indexOf(word)) {
+                System.out.println(word + "nek");
             }
 
         }

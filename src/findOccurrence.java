@@ -16,7 +16,7 @@ public class findOccurrence {
 
         int index = 0;
         int count = 0;
-     //   Map<Integer,Integer> map = new Map<Integer, Integer>();
+        //   Map<Integer,Integer> map = new Map<Integer, Integer>();
 
         while (true) {
             index = str.indexOf(subStr, count);
