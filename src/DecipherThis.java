@@ -2,34 +2,35 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class DecipherThis {
-    public static void main(String[] args) throws UnsupportedEncodingException {
-
+    public static void main(String[] args) {
 
         decipher2("72eva 97 103o 97t 116sih 97dn 115ee 104wo 121uo 100o");
     }
+
     public static String decipher2(String s) {
 
         if (s.length() == 0) {
             return "";
         }
-        String y = s.replaceAll("[^0-9]"," ");
-        System.out.println(y);
+        ArrayList<String> a = new ArrayList<String>(Arrays.asList(s.split(" ")));
+        for (int j = 0; j < a.size(); j++) {
 
-        ArrayList<String> a = new ArrayList<String>(Arrays.asList(y.split(" ")));
-        System.out.println("++++++++"+a);
-        String z="";
-        for (int i = 0; i <a.size() ; i++) {
-           String c= String.valueOf(a.get(i));
+            Matcher mc = Pattern.compile("\\d+").matcher(a.get(j));
+
+            while (mc.matches()) {
+                mc.replaceAll(String.valueOf(Character.toChars(Integer.parseInt(mc.group()))));
+            }
 
         }
+        System.out.println(a.toString());
 
 
-        System.out.println("___"+z);
-
-        // String[] a = s.split(" ");
+       /* String z = "";
         String newStr = "";
         for (int i = 0; i < a.size(); i++) {
             if (a.get(i).length() == 1) {
@@ -51,7 +52,8 @@ public class DecipherThis {
             }
         }
         System.out.println(newStr.trim());
-        return newStr.trim();
+        return newStr.trim();*/
+        return null;
 
     }
 

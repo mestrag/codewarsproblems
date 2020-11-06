@@ -26,5 +26,18 @@ public class Practise2 {
         //without double quote its a number
         System.out.println(Integer.parseInt(a));
 
+        String w ="599600601602";
+        int c=w.charAt(0);
+               int len= w.length();
+               StringBuffer bf= new StringBuffer();
+        for (int i = c; i < len; i++){
+            bf.append(c);
+
+        }
+        if(bf.equals(w)){
+
+        }
+
+
     }
 }
