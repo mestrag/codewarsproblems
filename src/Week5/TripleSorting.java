@@ -5,14 +5,12 @@ import java.util.List;
 public class TripleSorting {
     public static String sort(List<Student> students) {
 
-
         return "";
     }
 
-
     static class Student {
-
-        public Student(int age, int gpa, String name) {
+        public Student(int age, int gpa, String name)
+        {
         }
 
         int getGpa() {
